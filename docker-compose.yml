@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  localization:
+
+    build: .
+
+    container_name: sound_localization
+
+    volumes:
+      - .:/app
+
+    command: python main.py
